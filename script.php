@@ -32,16 +32,21 @@ if (isset($_GET["linkB"]) && isset($_GET["linkD"]) && !isset($_GET["linkA"]) && 
 
 echo "<h1>Vous avez obtenu une note de " . $total . " sur 20 </h1><br>";
 
-if ($total <= 5) {
-  echo "<h2> Your death is coming </h2><br><br>";
-  echo '<img src="images/hodor.gif">';
-}elseif ($total <= 10) {
+if ($total <= 3) {
+  echo "<h2> Shame on you </h2><br><br>";
+  echo '<img src="images/shame.gif">';
+}elseif ($total <= 7) {
   echo "<h2> You know nothing looser </h2><br><br>";
   echo '<img src="images/nothing.gif">';
-} elseif ($total <= 15) {
-  echo "<h2> You are no one </h2><br><br>";
-  echo '<img src="images/noone.gif">';
-
+}elseif ($total <= 10) {
+  echo "<h2> Hmmmm </h2><br><br>";
+  echo '<img src="images/wtf.gif">';
+}elseif ($total <= 14) {
+  echo "<h2> Hold on </h2><br><br>";
+  echo '<img src="images/hodor.gif">';
+}elseif ($total <= 17) {
+  echo "<h2> Nice one </h2><br><br>";
+  echo '<img src="images/nice.gif">';
 }else {
   echo "<h2> Drogon : Dracarys </h2><br><br>";
   echo '<img src="images/drogon.gif">';
