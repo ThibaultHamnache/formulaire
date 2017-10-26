@@ -1,4 +1,24 @@
-form
+h1
 {
-justify-content: space-between;
+  text-align: center;
+  font-family: 'Saira', sans-serif;
+}
+.clic
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button
+{
+  width: 200px;
+  font-size: 20px;
+  border-radius: 10px;
+  color: white;
+}
+p
+{
+  font-family: 'Chivo', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
 }

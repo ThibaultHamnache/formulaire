@@ -2,66 +2,156 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Saira" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chivo:400,700" rel="stylesheet">
+    <link rel="shortcut icon" href="images/icone.ico">
+
     <title>QUIZ GoT</title>
   </head>
   <body>
     <main>
-      <h1>Connais tu Game of Thrones</h1>
+      <h1>Quiz Game of Thrones</h1>
+
+<br><br>
+
       <form action="./script.php">
-        1- Qui est l'auteur de game of thrones ? <br>
-        <input type="radio" name="author" value="q1r1"> J.R.R. Tolkien <br>
-        <input type="radio" name="author" value="q1r2"> G.R.R. Martin
-          <br><br>
-        2- Comment s'appellent les dragons de Daenerys Targaryen ? <br>
-        <input type="checkbox" name="drakeA" value="q2r1"> Drogon <br>
-        <input type="checkbox" name="drakeB" value="q2r2"> Spyro <br>
-        <input type="checkbox" name="drakeC" value="q2r3"> Smaug <br>
-        <input type="checkbox" name="drakeD" value="q2r4"> Viserion <br>
-        <input type="checkbox" name="drakeE" value="q2r5"> Rhaegal
-          <br><br>
-        3- Combien d'enfants Catelyn Stark et Eddard Stark ont-ils eu ? <br>
-        <input type="number" name="kids">
-          <br><br>
-        4- Qui est le vrai père de Joffrey Baratheon ? <br>
-        <input type="radio" name="father" value="q4r1"> Son cousin Lancel ? <br>
-        <input type="radio" name="father" value="q4r2"> Son oncle Jamie ? <br>
-        <input type="radio" name="father" value="q4r3"> Son grand-père Tywin ? <br>
-        <input type="radio" name="father" value="q4r4"> Son père Robert ?
-          <br><br>
-        5- Winter is....? <br>
-        <select name="winter">
-          <option value="q5r1"> Gone </option>
-          <option value="q5r2"> Cold </option>
-          <option value="q5r3"> Coming </option>
+        <div class="container">
 
-        </select>
-          <br><br>
-        6- Quelle est le nom du loup de Jon Snow ? <br>
-        <input type="radio" name="wolf" value="q6r1"> Nymeria <br>
-        <input type="radio" name="wolf" value="q6r2"> Summer <br>
-        <input type="radio" name="wolf" value="q6r3"> Lady <br>
-        <input type="radio" name="wolf" value="q6r4"> Ghost <br>
-        <input type="radio" name="wolf" value="q6r5"> Shaggydog <br>
-        <input type="radio" name="wolf" value="q6r6"> Grey Wind
-          <br><br>
-        7- Qui joue Sansa Stark ? <br>
-        <input type="text" name="actress">
-          <br><br>
-        8- Comment surnomme t'on Gregor Clegane ? <br>
-        <select name="alias">
-          <option value="q8r1"> The mad king </option>
-          <option value="q8r2"> The mountain </option>
-          <option value="q8r3"> The king in the north </option>
-        </select>
-          <br><br>
-        9- Comment est mort Ramsay Bolton ? <br>
-        <input type="radio" name="bolton" value="q9r1"> Mangé par ses chiens ? <br>
-        <input type="radio" name="bolton" value="q9r2"> Mort de froid ? <br>
-        <input type="radio" name="bolton" value="q9r3"> Battu a mort par Jon Snow ?
-          <br><br>
 
-        <input type="submit" value="Send">
+          <div class="row">
+            <div class="col-lg-6 center">
+              <br>
+              <p>1- Qui est l'auteur de game of thrones ?</p>
+              <input type="radio" name="author" value="q1r1"> J.R.R. Tolkien <br>
+              <input type="radio" name="author" value="q1r2"> G.R.R. Martin
+                <br><br>
+            </div>
+            <div class="col-lg-6 center">
+              <p>2- Comment s'appellent les dragons de Daenerys Targaryen ?</p>
+              <input type="checkbox" name="drakeA" value="q2r1"> Drogon <br>
+              <input type="checkbox" name="drakeB" value="q2r2"> Spyro <br>
+              <input type="checkbox" name="drakeC" value="q2r3"> Smaug <br>
+              <input type="checkbox" name="drakeD" value="q2r4"> Viserion <br>
+              <input type="checkbox" name="drakeE" value="q2r5"> Rhaegal
+                <br><br>
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-lg-6 center">
+              <br>
+              <p>3- Combien d'enfants Catelyn Stark et Eddard Stark ont-ils eu ?</p>
+              <input type="number" name="kids">
+                <br><br>
+            </div>
+            <div class="col-lg-6 center">
+              <p>4- Qui est le vrai père de Joffrey Baratheon ?</p>
+              <input type="radio" name="father" value="q4r1"> Son cousin Lancel ? <br>
+              <input type="radio" name="father" value="q4r2"> Son oncle Jamie ? <br>
+              <input type="radio" name="father" value="q4r3"> Son grand-père Tywin ? <br>
+              <input type="radio" name="father" value="q4r4"> Son père Robert ?
+                <br><br>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6 center">
+              <p>5- Winter is....?</p>
+              <select name="winter">
+                <option value="q5r1"> Gone </option>
+                <option value="q5r2"> Cold </option>
+                <option value="q5r3"> Coming </option>
+              </select>
+                <br><br>
+<br>
+              <p>7- Qui joue Sansa Stark ?</p>
+              <input type="text" name="actress">
+                <br><br>
+            </div>
+            <div class="col-lg-6 center">
+              <p>6- Quelle est le nom du loup de Jon Snow ?</p>
+              <input type="radio" name="wolf" value="q6r1"> Nymeria <br>
+              <input type="radio" name="wolf" value="q6r2"> Summer <br>
+              <input type="radio" name="wolf" value="q6r3"> Lady <br>
+              <input type="radio" name="wolf" value="q6r4"> Ghost <br>
+              <input type="radio" name="wolf" value="q6r5"> Shaggydog <br>
+              <input type="radio" name="wolf" value="q6r6"> Grey Wind
+                <br><br>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6 center">
+              <br>
+              <p>8- Comment surnomme t'on Gregor Clegane ?</p>
+              <select name="alias">
+                <option value="q8r1"> The mad king </option>
+                <option value="q8r2"> The mountain </option>
+                <option value="q8r3"> The king in the north </option>
+              </select>
+                <br><br>
+            </div>
+            <div class="col-lg-6 center">
+              <p>9- Comment est mort Ramsay Bolton ?</p>
+              <input type="radio" name="bolton" value="q9r1"> Mangé par ses chiens ? <br>
+              <input type="radio" name="bolton" value="q9r2"> Mort de froid ? <br>
+              <input type="radio" name="bolton" value="q9r3"> Battu a mort par Jon Snow ?
+                <br><br>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6 center">
+              <br>
+              <p>10- Que signifie "Valhar Morgulis"</p>
+              <input type="radio" name="valar" value="q10r1"> Tout Homme doit mourir ? <br>
+              <input type="radio" name="valar" value="q10r2"> Tout Homme doit servir ? <br>
+              <input type="radio" name="valar" value="q10r3"> Tout Homme doit périr ?
+                <br><br>
+            </div>
+              <div class="col-lg-6 center">
+              <p>11- Dans quels pays sont tourner les scènes de Game of Thrones ? (5 réponses)</p>
+              <input type="checkbox" name="countryA" value="q11r1"> Irlande <br>
+              <input type="checkbox" name="countryB" value="q11r2"> Islande <br>
+              <input type="checkbox" name="countryC" value="q11r3"> Danemark <br>
+              <input type="checkbox" name="countryD" value="q11r4"> Croatie <br>
+              <input type="checkbox" name="countryE" value="q11r5"> Tunisie <br>
+              <input type="checkbox" name="countryF" value="q11r6"> Maroc <br>
+              <input type="checkbox" name="countryG" value="q11r6"> Malte
+                <br><br>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6 center">
+              <p>12- Quelle est la devise de la maison Lannister ?</p>
+              <input type="radio" name="slogan" value="q12r1"> Feu et sang (Fire and blood)<br>
+              <input type="radio" name="slogan" value="q12r2"> Un Lannister paye toujours ses dettes <br>
+              <input type="radio" name="slogan" value="q12r3"> Entend moi rugir (Hear Me Roar) <br>
+              <input type="radio" name="slogan" value="q12r4"> Insoumis, invaincus, intacts (Unbowed, Unbent, Unbroken)
+                <br><br>
+            </div>
+            <div class="col-lg-6 center">
+              <p>13- Quel liens y a-t-il entre Jon Snow et Daenerys Targaryen ?</p>
+              <input type="checkbox" name="linkA" value="q13r1"> Frère et Soeur <br>
+              <input type="checkbox" name="linkB" value="q13r1"> Amants <br>
+              <input type="checkbox" name="linkC" value="q13r1"> Collègues <br>
+              <input type="checkbox" name="linkD" value="q13r1"> Neuveu et tante
+                <br><br>
+            </div>
+          </div>
+
+            <br>
+            <div class="col-lg-12 clic">
+              <input class="button" type="submit" value="Valider">
+            </div>
+
+        </div>
+
+        <br><br>
       </form>
     </main>
   </body>
