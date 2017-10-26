@@ -30,19 +30,19 @@ if (isset($_GET["linkB"]) && isset($_GET["linkD"]) && !isset($_GET["linkA"]) && 
   $total = $total;
 };
 
-echo "Vous avez obtenu une note de " . $total . " sur 20 <br>";
+echo "<h1>Vous avez obtenu une note de " . $total . " sur 20 </h1><br>";
 
 if ($total <= 5) {
-  echo "Your death is coming <br><br>";
+  echo "<h2> Your death is coming </h2><br><br>";
   echo '<img src="images/hodor.gif">';
 }elseif ($total <= 10) {
-  echo "You know nothing looser <br><br>";
+  echo "<h2> You know nothing looser </h2><br><br>";
   echo '<img src="images/nothing.gif">';
 } elseif ($total <= 15) {
-  echo "You are no one <br><br>";
+  echo "<h2> You are no one </h2><br><br>";
   echo '<img src="images/noone.gif">';
 
 }else {
-  echo "Drogon : Dracarys <br><br>";
+  echo "<h2> Drogon : Dracarys </h2><br><br>";
   echo '<img src="images/drogon.gif">';
 };
