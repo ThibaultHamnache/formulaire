@@ -33,11 +33,16 @@ if (isset($_GET["linkB"]) && isset($_GET["linkD"]) && !isset($_GET["linkA"]) && 
 echo "Vous avez obtenu une note de " . $total . " sur 20 <br>";
 
 if ($total <= 5) {
-  echo "Your death is coming";
+  echo "Your death is coming <br><br>";
+  echo '<img src="images/hodor.gif">';
 }elseif ($total <= 10) {
-  echo "You know nothing looser";
+  echo "You know nothing looser <br><br>";
+  echo '<img src="images/nothing.gif">';
 } elseif ($total <= 15) {
-  echo "You are no one";
+  echo "You are no one <br><br>";
+  echo '<img src="images/noone.gif">';
+
 }else {
-  echo "You might be able to ride Drogon";
+  echo "Drogon : Dracarys <br><br>";
+  echo '<img src="images/drogon.gif">';
 };
