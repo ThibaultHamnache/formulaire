@@ -22,3 +22,17 @@ p
   font-weight: bold;
   font-size: 18px;
 }
+.banner
+{
+  background-image: url(images/banner.jpg);
+  height: 50vh   ;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+
+
+/**************************************/
+/************** HEADER ****************/
+/**************************************/

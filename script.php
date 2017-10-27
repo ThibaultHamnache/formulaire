@@ -1,15 +1,16 @@
 <?php
 $total = 0;
-$_GET["author"] == "q1r2" ? $total += 1 : $total = $total;
-$_GET["kids"] == "5" ? $total += 2 : $total = $total;
-$_GET["father"] == "q4r2" ? $total += 1 : $total = $total;
-$_GET["winter"] == "q5r3" ? $total += 1 : $total = $total;
-$_GET["wolf"] == "q6r4" ? $total += 2 : $total = $total;
-strtolower($_GET["actress"]) == "sophie turner" ? $total += 3 : $total = $total;
-$_GET["alias"] == "q8r2" ? $total += 1 : $total = $total;
-$_GET["bolton"] == "q9r1" ? $total += 1 : $total = $total;
-$_GET["valar"] == "q10r1" ? $total += 1 : $total = $total;
-$_GET["slogan"] == "q12r3" ? $total += 1 : $total = $total;
+
+isset($_GET["author"]) && $_GET["author"] == "q1r2" ? $total += 1 : $total = $total;
+isset($_GET["kids"]) && $_GET["kids"] == "5" ? $total += 2 : $total = $total;
+isset($_GET["father"]) && $_GET["father"] == "q4r2" ? $total += 1 : $total = $total;
+isset($_GET["winter"]) && $_GET["winter"] == "q5r3" ? $total += 1 : $total = $total;
+isset($_GET["wolf"]) && $_GET["wolf"] == "q6r4" ? $total += 2 : $total = $total;
+isset($_GET["actress"]) && strtolower($_GET["actress"]) == "sophie turner" ? $total += 3 : $total = $total;
+isset($_GET["alias"]) && $_GET["alias"] == "q8r2" ? $total += 1 : $total = $total;
+isset($_GET["bolton"]) && $_GET["bolton"] == "q9r1" ? $total += 1 : $total = $total;
+isset($_GET["valar"]) && $_GET["valar"] == "q10r1" ? $total += 1 : $total = $total;
+isset($_GET["slogan"]) && $_GET["slogan"] == "q12r3" ? $total += 1 : $total = $total;
 
 
 if (isset($_GET["drakeA"]) && isset($_GET["drakeD"]) && isset($_GET["drakeE"]) && !isset($_GET["drakeB"]) && !isset($_GET["drakeC"])) {
